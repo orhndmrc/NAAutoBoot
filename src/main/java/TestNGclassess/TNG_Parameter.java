@@ -61,7 +61,7 @@ public class TNG_Parameter  {
         System.out.println("@AfterAll - closed browser session");
 
     }
-    @Test
+    @Test(groups = "smoke")
     public void test1() throws InterruptedException {
         Thread.sleep(5000);
         WebElement hovSupport = driver.findElement(By.xpath("//section//a[text()='Support']"));
@@ -76,7 +76,7 @@ public class TNG_Parameter  {
         Assert.assertEquals(currUrl, "https://forum.jquery.com/","url mismatch!!!");
         System.out.println("@Test1 - currUrl is:"+currUrl);
     }
-    @Test(dependsOnMethods = {"test1"})
+    @Test(dependsOnMethods = {"test1"}, groups ="regression")
     public void test2() throws InterruptedException {
         Thread.sleep(5000);
         WebElement getStarted = driver.findElement(By.xpath("//a[text()='Getting Started']"));
@@ -85,7 +85,7 @@ public class TNG_Parameter  {
         Assert.assertTrue(driver.getCurrentUrl().contains("getting-started"));
     }
 
-    @Test()
+    @Test(groups = "regression")
     public void test3() throws InterruptedException {
         Thread.sleep(2000);
         System.out.println("Class1 - @Test3 method");

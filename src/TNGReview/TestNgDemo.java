@@ -32,7 +32,7 @@ public class TestNgDemo {
     }
     @Test (groups={"regression","login"})//(enabled=false)//(priority = 1)
     public void titleValidation() {
-        String expectedTitle ="OrangeHRM1";
+        String expectedTitle ="OrangeHRM";
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle,"Title miscmatch");
     }
