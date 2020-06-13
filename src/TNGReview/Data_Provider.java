@@ -48,7 +48,7 @@ public class Data_Provider  {
         driver.findElement(By.id("welcome")).click();
         driver.findElement(By.linkText("Logout")).click();
     }
-    @Test(dataProvider = "getData")
+    @Test(groups="smoke", dataProvider = "getData")
     public void addMultipleEmployee (String name, String lastName) throws Exception{
 
         //navigate to add employee page
