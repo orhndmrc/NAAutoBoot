@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="JQERY Tests" parallel="tests" thread-count="3">
+    <test name="CLI Tests">
+        <parameter name="LinkNm" value="CLI"></parameter>
+        <parameter name="header" value="OpenJS Foundation"></parameter>
+        <parameter name="urlLink" value="openjsf"></parameter>
+        <classes>
+            <class name="main.java.TestNGclassess.TNG2_Parallel"/>
+        </classes>
+    </test>
+    <test name="Documentation Tests">
+        <parameter name="LinkNm" value="Documentation"></parameter>
+        <parameter name="header" value="jQuery’s Style Guide"></parameter>
+        <parameter name="urlLink" value="documentation"></parameter>
+        <classes>
+            <class name="main.java.TestNGclassess.TNG2_Parallel"/>
+        </classes>
+    </test>
+    <test name="Bug Triage">
+        <parameter name="LinkNm" value="Bug Triage"></parameter>
+        <parameter name="header" value="Bug Triage"></parameter>
+        <parameter name="urlLink" value="triage"></parameter>
+        <classes>
+            <class name="main.java.TestNGclassess.TNG2_Parallel"/>
+        </classes>
+    </test>
+</suite>

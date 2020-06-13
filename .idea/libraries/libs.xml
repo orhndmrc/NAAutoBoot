@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/libs/byte-buddy-1.8.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/libs/commons-exec-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/libs/guava-25.0-jre.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/libs/okhttp-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/libs/okio-1.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/client-combined-3.141.59.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/commons-io-2.6.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/Selenium/libs" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg-Maven/guice-4.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg-Maven/jcommander-1.78.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg-Maven/snakeyaml-1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg-Maven/testng-7.1.0.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/Selenium" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg/guice-4.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg/jcommander-1.78.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg/snakeyaml-1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg/testng-7.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/client-combined-3.141.59-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/src" />
+      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/Selenium" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../../Program Files/Java/Selenium" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../Program Files/Java/Selenium/libs" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../Program Files/Java/Selenium" recursive="false" type="SOURCES" />
+  </library>
+</component>

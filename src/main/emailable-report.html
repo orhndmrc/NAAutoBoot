@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">app testing  firefox</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">34.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">app testing chrome</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">35.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t3">app testing edge</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">53.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">6</td><td class="numi">6</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">87.8 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">app testing  firefox &#8212; failed</th></tr>
+<tr class="failedodd"><td>main.java.TestNGclassess.TNG_Parameter</td><td><a href="#m1"><b>test1</b>  </a></td><td class="numi">1</td><td>1591651971187</td><td class="numi">10217</td></tr>
+<tr><th colspan="5">app testing  firefox &#8212; skipped</th></tr>
+<tr class="skippedodd"><td>main.java.TestNGclassess.TNG_Parameter</td><td><a href="#m2"><b>test2</b>  </a></td><td class="numi">1</td><td>1591651983427</td><td class="numi">0</td></tr>
+<tr><th colspan="5">app testing  firefox &#8212; passed</th></tr>
+<tr class="passedodd"><td>main.java.TestNGclassess.TNG_Parameter</td><td><a href="#m3"><b>test3</b>  </a></td><td class="numi">1</td><td>1591651981419</td><td class="numi">2002</td></tr>
+<tr id="t2"><th colspan="5">app testing chrome &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td>main.java.TestNGclassess.TNG_Parameter</td><td><a href="#m4"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1591651989587</td><td class="numi">2</td></tr>
+<tr><th colspan="5">app testing chrome &#8212; failed</th></tr>
+<tr class="failedodd"><td>main.java.TestNGclassess.TNG_Parameter</td><td><a href="#m5"><b>test2</b>  </a></td><td class="numi">1</td><td>1591651984574</td><td class="numi">5003</td></tr>
+<tr><th colspan="5">app testing chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">main.java.TestNGclassess.TNG_Parameter</td><td><a href="#m6"><b>test1</b>  </a></td><td class="numi">1</td><td>1591651967218</td><td class="numi">15351</td></tr><tr class="passedodd"><td><a href="#m7"><b>test3</b>  </a></td><td class="numi">1</td><td>1591651982570</td><td class="numi">2002</td></tr>
+<tr id="t3"><th colspan="5">app testing edge &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">main.java.TestNGclassess.TNG_Parameter</td><td><a href="#m8"><b>test1</b>  </a></td><td class="numi">1</td><td>1591651997254</td><td class="numi">27514</td></tr><tr class="passedodd"><td><a href="#m9"><b>test3</b>  </a></td><td class="numi">1</td><td>1591652024769</td><td class="numi">2002</td></tr><tr class="passedodd"><td><a href="#m10"><b>test2</b>  </a></td><td class="numi">1</td><td>1591652026771</td><td class="numi">12355</td></tr>
+</table>
+<h1>app testing  firefox</h1>
+<h2 id="m1">main.java.TestNGclassess.TNG_Parameter:test1</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a href=&quot;https://forum.jquery.com/&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-KDHLI5B&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 8344, moz:profile: C:\Users\demir\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 88249ae3-d63b-4fbb-a6db-e671591248f1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at main.java.TestNGclassess.TNG_Parameter.test1(TNG_Parameter.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 23 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">main.java.TestNGclassess.TNG_Parameter:test2</h2>
+<div>
+<div class="stacktrace">java.lang.Throwable: Method TNG_Parameter.test2()[pri:0, instance:main.java.TestNGclassess.TNG_Parameter@3439f68d] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 9 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">main.java.TestNGclassess.TNG_Parameter:test3</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>app testing chrome</h1>
+<h2 id="m4">main.java.TestNGclassess.TNG_Parameter:tearDown</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-KDHLI5B&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at main.java.TestNGclassess.TNG_Parameter.tearDown(TNG_Parameter.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 16 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">main.java.TestNGclassess.TNG_Parameter:test2</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-KDHLI5B&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at main.java.TestNGclassess.TNG_Parameter.test2(TNG_Parameter.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">main.java.TestNGclassess.TNG_Parameter:test3</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">main.java.TestNGclassess.TNG_Parameter:test1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>app testing edge</h1>
+<h2 id="m8">main.java.TestNGclassess.TNG_Parameter:test1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">main.java.TestNGclassess.TNG_Parameter:test3</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">main.java.TestNGclassess.TNG_Parameter:test2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
