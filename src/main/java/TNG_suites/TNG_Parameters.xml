@@ -2,9 +2,7 @@
 
 <suite name = "Regression Suite">
 
-    <listeners>
-        <listener class-name="main.java.TestNGclassess.Listeners"/>
-    </listeners>
+
     <test name="app testing chrome">
         <parameter name="browser" value="chrome"></parameter>
         <parameter name="platform" value="windows"></parameter>

@@ -6,6 +6,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
 import java.io.File;
@@ -19,15 +20,19 @@ public class Listeners implements ITestListener {
     }
 
     @Override
-    public void onStart(ITestContext result) {
+    public void onStart(ITestContext context) {
         // TODO Auto-generated method stub
-
+        System.out.println("onStart= "+context.getName());
+        ITestNGMethod methods[] = context.getAllTestMethods();
+        for ( ITestNGMethod method: methods) {
+            System.out.println(method.getMethodName());
+        }
     }
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
         // TODO Auto-generated method stub
-
+        System.out.println("onTestFailedButWithinSuccessPercentag= "+result.getName());
     }
 
     @Override
@@ -47,7 +52,7 @@ public class Listeners implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         // TODO Auto-generated method stub
-
+        System.out.println("OnTestStart= "+result.getName());
     }
 
     @Override

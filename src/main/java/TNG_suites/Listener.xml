@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name = "Regression Suite">
+    <listeners>
+        <listener class-name="main.java.TestNGclassess.Listeners"/>
+    </listeners>
+    <test name="app testing test">
+        <classes>
+            <class name="main.java.TestNGclassess.TNG_Listeners"></class>
+
+        </classes>
+    </test>
+
+</suite>

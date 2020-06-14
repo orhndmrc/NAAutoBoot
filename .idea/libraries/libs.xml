@@ -9,15 +9,15 @@
       <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/client-combined-3.141.59.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Selenium/commons-io-2.6.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Program Files/Java/Selenium/libs" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg-Maven/guice-4.2.3.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg-Maven/jcommander-1.78.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg-Maven/snakeyaml-1.26.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg-Maven/testng-7.1.0.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../Program Files/Java/Selenium" />
       <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg/guice-4.2.3.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg/jcommander-1.78.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg/snakeyaml-1.26.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/TestNg/testng-7.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Maven/extentreports-2.41.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Maven/freemarker-2.3.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Maven/jsoup-1.13.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/Maven/sqlite-jdbc-3.31.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
