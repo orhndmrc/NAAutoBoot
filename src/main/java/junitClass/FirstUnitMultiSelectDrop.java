@@ -57,6 +57,7 @@ public class FirstUnitMultiSelectDrop {
 
         WebElement multiEle = driver.findElement(By.name("multiple-select-example"));
         Select sel = new Select(multiEle);
+
         sel.deselectByValue("orange");
         Thread.sleep(2000L);
         sel.deselectByVisibleText("Apple");
