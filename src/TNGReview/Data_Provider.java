@@ -17,7 +17,7 @@ public class Data_Provider  {
     String url;
     @BeforeClass
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\demir\\eclipse\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\demir\\NAAutoBoot\\chromedriver.exe");
         driver= new ChromeDriver();
         driver.manage().window().maximize();
         url = "https://opensource-demo.orangehrmlive.com/";
@@ -48,7 +48,7 @@ public class Data_Provider  {
         driver.findElement(By.id("welcome")).click();
         driver.findElement(By.linkText("Logout")).click();
     }
-    @Test(groups="smoke", dataProvider = "getData")
+    @Test( dataProvider = "getData")
     public void addMultipleEmployee (String name, String lastName) throws Exception{
 
         //navigate to add employee page

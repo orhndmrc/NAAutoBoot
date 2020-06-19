@@ -5,7 +5,7 @@
         <classes>
             <class name="TNGReview.Data_Provider"/>
             <class name="TNGReview.TestNgDemo"/>
-            <class name="main.java.TestNGclassess.TNG_Parameter"/>
+
         </classes>
     </test>
 

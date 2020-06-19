@@ -16,7 +16,7 @@ public class TestNgDemo {
     String url;
     @BeforeMethod
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\demir\\eclipse\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\demir\\NAAutoBoot\\chromedriver.exe");
         driver= new ChromeDriver();
         driver.manage().window().maximize();
         url = "https://opensource-demo.orangehrmlive.com/";
