@@ -1,10 +1,12 @@
 package main.java.pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
@@ -13,31 +15,49 @@ public class ButtonsPage {
 //    WebElement buttonEle = driver.findElement(By.xpath("(//button[text()='A button element'])[position()=1]"));
 //    WebElement submit = driver.findElement(By.xpath("(//input[@value='A submit button'])[position()=1]"));
 //    WebElement anchor = driver.findElement(By.xpath("(//a[text()='An anchor'])[position()=1]"));
-
-    @FindBy( how = How.XPATH, using = "//button[text()='A button element'][position()=1]")
-      WebElement buttonElem;
+     private WebDriver buttonDriver;
+public ButtonsPage(WebDriver driver){
+    buttonDriver=driver;
+    PageFactory.initElements(buttonDriver,this);
+}
+    @FindBy( how = How.XPATH, using = "(//button[text()='A button element'])[position()=1]")
+    private WebElement buttonElem;
 
     @FindBy(xpath="(//input[@value='A submit button'])[position()=1]")
-      WebElement submit;
+    private WebElement submit;
 
     @FindBy(xpath="(//a[text()='An anchor'])[position()=1]")
-      WebElement anchor;
+    private WebElement anchor;
 
     @FindBy(how = How.LINK_TEXT, using = "view source")
-    WebElement viewSource;
+    private WebElement viewSource;
 
     @FindBy(how = How.CLASS_NAME, using="demo-frame")
-    WebElement frame;
+    private WebElement frame;
 
     @FindBy(how = How.ID, using="content")
-    WebElement content;
+    private WebElement content;
 
     //finding a list of elements
     @FindBys(@FindBy(xpath="//button[text()='A button element']"))
-    List<WebElement> listofButtons;
+    private List<WebElement> listofButtons;
 
     @FindBys(@FindBy(xpath="//input[@value='A submit button']"))
-    List<WebElement> listofSubmit;
+    private List<WebElement> listofSubmit;
 
+public void buttonEleClick(){
+    buttonElem.click();
+}
+    public void switchToFrame(){
+       buttonDriver.switchTo().frame(frame);
+    }
+    //method to interact with the element
+    public void submitClick() {
+        submit.click();
+    }
 
+    //method to interact with the element
+    public int listSize () {
+        return listofSubmit.size();
+    }
 }
