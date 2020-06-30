@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Set;
 
 public class FirstUnitHandle {
@@ -25,7 +26,9 @@ public class FirstUnitHandle {
     @AfterAll
     public static void  tearDown() throws IOException {
         //taking a screenshot
-        File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        TakesScreenshot screenShot =(TakesScreenshot) driver;
+
+        File srcFile = screenShot.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFile, new File("C:\\Users\\demir\\NAAutoBoot\\src\\snippets\\screenshot1.png"));
         driver.quit();
 
@@ -34,26 +37,40 @@ public class FirstUnitHandle {
 
     @Test
     public  void test1() throws Exception{
-      String currHandle= driver.getWindowHandle();
-        System.out.println("@Test1-current window handle before clicking "+currHandle);
-      driver.findElement(By.id("openwindow")).click();
+        String parentHandle= driver.getWindowHandle();
+        System.out.println("@Test1-current window handle before clicking "+parentHandle);
+      driver.findElement(By.id("openwindow")).click();//opens a new window
       Thread.sleep(5000L);
        // currHandle= driver.getWindowHandle();
        // System.out.println("@Test1-current window handle after clicking "+currHandle);
        // Thread.sleep(5000L);
         Set<String> handles = driver.getWindowHandles();
         System.out.println("number of windows "+handles.size());
-        for(String handle :handles) {
-            System.out.println("handle is: " + handle);
-
-            if (handles.equals(currHandle)) {
-                System.out.println("handle is parent handle"+handle);
-            } else {
-                System.out.println("handle is child handle"+handle);
-                driver.switchTo().window(handle);
-               // driver.findElement(By.id("bmwradio")).click();//cant do this because now focus is in child window and radio is in parent window
+        Iterator<String> itr = handles.iterator();
+        while(itr.hasNext()){
+            String childHandle = itr.next();
+            System.out.println(childHandle);
+            if(!parentHandle.equals(childHandle)){
+                driver.switchTo().window(childHandle);
+                driver.findElement(By.xpath("//div[@class='course-listing-title' and contains(text(),'Selenium WebDriver With Java')]")).click();
             }
+        }
+
+
+
+
+//        for(String handle :handles) {
+//            System.out.println("handle is: " + handle);
+//
+//            if (!handles.equals(currHandle)) {
+//                System.out.println("handle is parent handle"+handle);
+//                driver.switchTo().window(handle);
+//                System.out.println("handle is child handle"+handle);
+//                driver.findElement(By.xpath("//div[@class='course-listing-title' and contains(text(),'Selenium WebDriver With Java')]")).click();
+//                driver.close();
+//                break;
+//            }
         }
     }
 
-}
+

@@ -28,7 +28,7 @@ public class TNG_PageObj1 {
         jPage = new JQueryHPage(driver);
         driver.manage().window().maximize();
         jPage.clicks("buttons");
-        bPage.switchToFrame();
+        jPage.switchToFrame();
     }
 
     @AfterClass

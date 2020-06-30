@@ -3,6 +3,7 @@ package main.java.pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class JQueryHPage {
@@ -22,7 +23,8 @@ public class JQueryHPage {
 
     @FindBy(linkText="Selectmenu")
     WebElement selectmenu;
-
+    @FindBy(how = How.CLASS_NAME, using="demo-frame")
+    private WebElement frame;
     @FindBy(linkText="Tabs")
     WebElement tabs;
 
@@ -37,5 +39,8 @@ public class JQueryHPage {
             case "tabs":
                 tabs.click();
         }
+    }
+    public void switchToFrame(){
+       hpageDriver.switchTo().frame(frame);
     }
 }

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name = "Regression Suite" parallel="classes">
+    <test name="pageObj">
+        <classes>
+            <class name="main.java.TestNGclassess.TNG_PageObj1"></class>
+            <class name="main.java.TestNGclassess.TNG_PageObj2"></class>
+            <class name="main.java.TestNGclassess.TNG_BofaTest"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -32,8 +32,7 @@ public ButtonsPage(WebDriver driver){
     @FindBy(how = How.LINK_TEXT, using = "view source")
     private WebElement viewSource;
 
-    @FindBy(how = How.CLASS_NAME, using="demo-frame")
-    private WebElement frame;
+
 
     @FindBy(how = How.ID, using="content")
     private WebElement content;
@@ -48,9 +47,7 @@ public ButtonsPage(WebDriver driver){
 public void buttonEleClick(){
     buttonElem.click();
 }
-    public void switchToFrame(){
-       buttonDriver.switchTo().frame(frame);
-    }
+
     //method to interact with the element
     public void submitClick() {
         submit.click();
